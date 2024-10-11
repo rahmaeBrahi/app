@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>log form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 style="color:red;">welcome to your log form</h1>
+    
+    <form action="/process" method="POST">
+        <label for="first_name">Enter your first name:</label><br>
+        <input type="text" id="first_name" name="first_name" required><br><br>
+        
+        <label for="last_name">Enter your last name:</label><br>
+        <input type="text" id="last_name" name="last_name" required><br><br>
+       
+        <label for="age">Enter your age:</label><br>
+        <input type="number" id="age" name="age" required><br><br>
+        
+        <button type="submit">Submit</button>
+    </form>
+    
+    <p>{{ message }}</p>
+</body>
+</html>
